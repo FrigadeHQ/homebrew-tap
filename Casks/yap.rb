@@ -8,12 +8,12 @@ cask "yap" do
   desc "On-device voice dictation for macOS"
   homepage "https://github.com/FrigadeHQ/yap"
 
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "Yap.app"
 
   zap trash: [
-    "~/Library/Preferences/com.frigade.Yap.plist",
     "~/Library/Application Support/Yap",
+    "~/Library/Preferences/com.frigade.Yap.plist",
   ]
 end
