@@ -1,6 +1,6 @@
 cask "yap" do
-  version "0.1.4"
-  sha256 "c48df795531037d8e2d806c14073f04fc72bb8d0434ef6a2029d9b64de65ed5c"
+  version "0.1.5"
+  sha256 "0a534cfc9240a98d4e1babb76a2e2f319e3d899012c98e92468a654404c95f08"
 
   url "https://github.com/FrigadeHQ/yap/releases/download/v#{version}/Yap.dmg",
       verified: "github.com/FrigadeHQ/yap/"
@@ -8,6 +8,7 @@ cask "yap" do
   desc "On-device voice dictation"
   homepage "https://github.com/FrigadeHQ/yap"
 
+  depends_on arch: :arm64
   depends_on macos: :tahoe
 
   app "Yap.app"
